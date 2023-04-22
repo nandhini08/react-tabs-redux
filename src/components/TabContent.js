@@ -26,7 +26,7 @@ class TabContent extends Component {
       <div
         id={`tabpanel-${this.props.for}`}
         role="tabpanel"
-        aria-labelledby={`tab-${this.props.for}`}
+        // aria-labelledby={`tab-${this.props.for}`}
         className={classNames({
           [className]: true,
           [visibleClassName]: !!this.props.isVisible,
