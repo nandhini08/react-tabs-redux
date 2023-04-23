@@ -59,13 +59,19 @@ const App = props => (
         }
       >
         <div className="tab-links">
-          <TabLink to="tab1">Tab1</TabLink>
-          <TabLink to="tab2">Tab2</TabLink>
-          <TabLink to="tab3">Tab3</TabLink>
+          <TabLink to="tab1" add="110">
+            Tab1
+          </TabLink>
+          <TabLink to="tab2" add="1110">
+            Tab2
+          </TabLink>
+          <TabLink to="tab3" add="19">
+            Tab3
+          </TabLink>
         </div>
 
         <div className="content">
-          <TabContent for="tab1">
+          <TabContent for="tab1" add="1">
             <h2>Tab1 content</h2>
             <p>
               Lorem ipsum dolor sit amet, in vel malorum adipiscing. Duis
@@ -79,11 +85,11 @@ const App = props => (
               expetendis, est nonumy contentiones voluptatibus cu.
             </p>
           </TabContent>
-          <TabContent for="tab2">
+          <TabContent for="tab2" add="2">
             <h2>Tab2 content</h2>
             <div>¯\_(ツ)_/¯</div>
           </TabContent>
-          <TabContent for="tab3">
+          <TabContent for="tab3" add="3">
             <h2>Tab3 content</h2>
             <div>(╯°□°）╯︵ ┻━┻)</div>
           </TabContent>
@@ -103,19 +109,19 @@ const App = props => (
         style={styles.tabs}
       >
         <div style={styles.links}>
-          <TabLink to="tab1" style={styles.tabLink}>
+          <TabLink to="tab1" style={styles.tabLink} add="010">
             Tab1
           </TabLink>
-          <TabLink to="tab2" default style={styles.tabLink}>
+          <TabLink to="tab2" default style={styles.tabLink} add="11110">
             Tab2
           </TabLink>
-          <TabLink to="tab3" style={styles.tabLink}>
+          <TabLink to="tab3" style={styles.tabLink} add="230">
             Tab3
           </TabLink>
         </div>
 
         <div style={styles.content}>
-          <TabContent for="tab1">
+          <TabContent for="tab1" add="4">
             <h2>Tab1 content</h2>
             <p>
               Lorem ipsum dolor sit amet, in vel malorum adipiscing. Duis
@@ -129,11 +135,11 @@ const App = props => (
               expetendis, est nonumy contentiones voluptatibus cu.
             </p>
           </TabContent>
-          <TabContent for="tab2">
+          <TabContent for="tab2" add="5">
             <h2>Tab2 content</h2>
             <div>¯\_(ツ)_/¯</div>
           </TabContent>
-          <TabContent for="tab3">
+          <TabContent for="tab3" add="6">
             <h2>Tab3 content</h2>
             <div>(╯°□°）╯︵ ┻━┻)</div>
           </TabContent>

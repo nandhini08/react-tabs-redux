@@ -28,6 +28,7 @@ class TabLink extends Component {
   render() {
     const {
       to,
+      add,
       handleSelect,
       isActive,
       namespace,
@@ -50,7 +51,7 @@ class TabLink extends Component {
     return React.createElement(
       componentType,
       {
-        id: `tab-${to}`,
+        id: `tab-${to}-${add}`,
         role: 'tab',
         'aria-selected': isActive ? 'true' : 'false',
         'aria-controls': `tabpanel-${to}`,
@@ -71,6 +72,7 @@ class TabLink extends Component {
 TabLink.propTypes = {
   to: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   component: PropTypes.string,
+  add: PropTypes.string,
   handleSelect: PropTypes.func,
   onClick: PropTypes.func,
   children: PropTypes.node,

@@ -28,11 +28,11 @@ const Demo = () => (
     </TabLink>
 
     <div style={styles.content}>
-      <TabContent for="react">
+      <TabContent for="react" add="1">
         <h2>React internal state example</h2>
         <PlainReactExample />
       </TabContent>
-      <TabContent for="redux">
+      <TabContent for="redux" add="2">
         <h2>Using Redux</h2>
         <ReduxExample />
       </TabContent>

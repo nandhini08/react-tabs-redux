@@ -24,7 +24,7 @@ class TabContent extends Component {
 
     return (
       <div
-        id={`tabpanel-${this.props.for}`}
+        id={`tabpanel-${this.props.for}-${this.props.add}`}
         role="tabpanel"
         // aria-labelledby={`tab-${this.props.for}`}
         className={classNames({
@@ -48,6 +48,7 @@ class TabContent extends Component {
 TabContent.propTypes = {
   children: PropTypes.node,
   for: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired, // eslint-disable-line react/no-unused-prop-types
+  add: PropTypes.string,
   visibleStyle: PropTypes.object,
   isVisible: PropTypes.bool,
   renderActiveTabContentOnly: PropTypes.bool,

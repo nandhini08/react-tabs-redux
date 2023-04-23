@@ -42,13 +42,19 @@ const App = () => (
       onChange={tab => console.log(`Tab selected: ${tab}`)} // eslint-disable-line no-console
     >
       <div className="tab-links">
-        <TabLink to="tab1">Tab1</TabLink>
-        <TabLink to="tab2">Tab2</TabLink>
-        <TabLink to="tab3">Tab3</TabLink>
+        <TabLink to="tab1" add="101">
+          Tab1
+        </TabLink>
+        <TabLink to="tab2" add="111">
+          Tab2
+        </TabLink>
+        <TabLink to="tab3" add="112">
+          Tab3
+        </TabLink>
       </div>
 
       <div className="content">
-        <TabContent for="tab1">
+        <TabContent for="tab1" add="10">
           <h2>Tab1 content</h2>
           <p>
             Lorem ipsum dolor sit amet, in vel malorum adipiscing. Duis deleniti
@@ -62,11 +68,11 @@ const App = () => (
             contentiones voluptatibus cu.
           </p>
         </TabContent>
-        <TabContent for="tab2">
+        <TabContent for="tab2" add="11">
           <h2>Tab2 content</h2>
           <div>¯\_(ツ)_/¯</div>
         </TabContent>
-        <TabContent for="tab3">
+        <TabContent for="tab3" add="12">
           <h2>Tab3 content</h2>
           <div>(╯°□°）╯︵ ┻━┻)</div>
         </TabContent>
@@ -79,19 +85,19 @@ const App = () => (
       style={styles.tabs}
     >
       <div style={styles.links}>
-        <TabLink to="tab1" style={styles.tabLink}>
+        <TabLink to="tab1" style={styles.tabLink} add="1011">
           Tab1
         </TabLink>
-        <TabLink to="tab2" default style={styles.tabLink}>
+        <TabLink to="tab2" default style={styles.tabLink} add="1012">
           Tab2
         </TabLink>
-        <TabLink to="tab3" style={styles.tabLink}>
+        <TabLink to="tab3" style={styles.tabLink} add="1013">
           Tab3
         </TabLink>
       </div>
 
       <div style={styles.content}>
-        <TabContent for="tab1">
+        <TabContent for="tab1" add="7">
           <h2>Tab1 content</h2>
           <p>
             Lorem ipsum dolor sit amet, in vel malorum adipiscing. Duis deleniti
@@ -105,11 +111,11 @@ const App = () => (
             contentiones voluptatibus cu.
           </p>
         </TabContent>
-        <TabContent for="tab2">
+        <TabContent for="tab2" add="8">
           <h2>Tab2 content</h2>
           <div>¯\_(ツ)_/¯</div>
         </TabContent>
-        <TabContent for="tab3">
+        <TabContent for="tab3" add="9">
           <h2>Tab3 content</h2>
           <div>(╯°□°）╯︵ ┻━┻)</div>
         </TabContent>
